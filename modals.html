@@ -1,0 +1,67 @@
+<!-- Disease Modal -->
+<div class="modal fade" id="diseaseModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header bg-dark text-white"><h5 class="modal-title">Predicted Disease</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">{{ predicted_disease }}</div>
+  </div></div>
+</div>
+
+<!-- Description Modal -->
+<div class="modal fade" id="descriptionModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header bg-dark text-white"><h5 class="modal-title">Description</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">{{ dis_des }}</div>
+  </div></div>
+</div>
+
+<!-- Precaution Modal -->
+<div class="modal fade" id="precautionModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header bg-dark text-white"><h5 class="modal-title">Precautions</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">
+      <ul>{% for item in my_precautions %}<li>{{ item }}</li>{% endfor %}</ul>
+    </div>
+  </div></div>
+</div>
+
+<!-- Medications Modal -->
+<div class="modal fade" id="medicationsModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header bg-dark text-white"><h5 class="modal-title">Medications</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">
+      <ul>{% for item in medications %}<li>{{ item }}</li>{% endfor %}</ul>
+    </div>
+  </div></div>
+</div>
+
+<!-- Workouts Modal -->
+<div class="modal fade" id="workoutsModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header bg-dark text-white"><h5 class="modal-title">Workouts</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">
+      <ul>{% for item in workout %}<li>{{ item }}</li>{% endfor %}</ul>
+    </div>
+  </div></div>
+</div>
+
+<!-- Diets Modal -->
+<div class="modal fade" id="dietsModal" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header bg-dark text-white"><h5 class="modal-title">Diets</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">
+      <ul>{% for item in my_diet %}<li>{{ item }}</li>{% endfor %}</ul>
+    </div>
+  </div></div>
+</div>
